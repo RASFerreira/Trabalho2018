@@ -1,0 +1,570 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  padding: 15px; }
+
+main {
+  padding: 0px 15px 0 15px; }
+
+@keyframes moveinright {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0; }
+  80% {
+    transform: translateX(10px); }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes moveinleft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0; }
+  80% {
+    transform: translateX(-10px); }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, #6e6e6e00, #6d686800), url(../img/gourmet_burguer.jpg);
+  background-size: cover;
+  background-position: bottom;
+  clip-path: polygon(40% 0, 100% 0, 100% 100%, 30% 100%, 0 75%, 0 0);
+  position: relative; }
+
+.header__text--box {
+  white-space: nowrap;
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  transform: translate(-50%, -50%); }
+
+.heading__primary {
+  color: #fff;
+  text-transform: uppercase; }
+
+.heading__primary--main {
+  display: block;
+  font-size: 60px;
+  letter-spacing: 30px;
+  font-family: 'Nothing You Could Do', cursive;
+  animation-name: moveinright;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  white-space: nowrap; }
+
+.heading__primary--sub {
+  display: block;
+  font-size: 40px;
+  letter-spacing: 17px;
+  font-family: 'Nothing You Could Do', cursive;
+  animation-name: moveinleft;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  white-space: nowrap; }
+
+.container__menu, .button__menu, .nav {
+  position: absolute; }
+
+.container__menu {
+  margin: auto;
+  top: 40px;
+  left: 57px;
+  margin-left: -20px; }
+
+#toggle {
+  display: none; }
+
+.button__menu {
+  z-index: 999;
+  width: 95px;
+  height: 95px;
+  background: #000 url(../img/logo_burguer_travel2.png) 70% 70%/35px 35px no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer; }
+
+#toggle:checked ~ .button {
+  transform: rotate(135deg);
+  box-shadow: 0 0 0 0 transparent; }
+
+.footer {
+  height: 40vh;
+  background-color: #100f11;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+
+.footer__logo {
+  height: 100px; }
+
+.footer__logo--box {
+  position: absolute;
+  top: 40px;
+  left: 200px; }
+
+.social__media {
+  position: absolute;
+  top: 170px;
+  left: 140px; }
+
+.social__media--col--left {
+  background-color: #100f11; }
+
+.facebook__logo {
+  height: 25px; }
+
+.twitter__logo {
+  height: 25px; }
+
+.insta__logo {
+  height: 25px; }
+
+.social__media--col--right {
+  background-color: #100f11; }
+
+.dress--text--box--main {
+  position: absolute;
+  top: 40px;
+  left: 168px; }
+
+.dress__text--main {
+  color: white;
+  white-space: nowrap;
+  position: absolute;
+  font-family: 'Nothing You Could Do', cursive; }
+
+.dress--text--box--sub {
+  position: absolute;
+  top: 80px;
+  left: 80px; }
+
+.dress__text--sub {
+  color: white;
+  white-space: nowrap;
+  position: absolute;
+  text-align: center;
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 15px; }
+
+.schedule--text--box--main {
+  position: absolute;
+  top: 40px;
+  left: 145px; }
+
+.schedule__text--main {
+  color: white;
+  white-space: nowrap;
+  position: absolute;
+  text-align: center;
+  font-family: 'Nothing You Could Do', cursive; }
+
+.schedule--text--box--sub {
+  position: absolute;
+  top: 100px;
+  left: 100px; }
+
+.schedule__text--sub {
+  color: white;
+  white-space: nowrap;
+  position: absolute;
+  text-align: center;
+  font-family: 'Nothing You Could Do', cursive; }
+
+.rights {
+  position: absolute;
+  top: 270px;
+  left: 70px; }
+
+.rights__text--main {
+  color: white;
+  white-space: nowrap;
+  position: absolute;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Nothing You Could Do', cursive; }
+
+.presentation {
+  height: 100vh; }
+
+.presentation__col--left {
+  background-color: #212435; }
+
+.presentation__col--center {
+  background-color: #212435; }
+
+.presentation__primary--main {
+  color: white;
+  font-family: 'Gruppo', cursive;
+  white-space: nowrap;
+  position: absolute;
+  left: 37%;
+  top: 12%; }
+
+.presentation__primary--sub {
+  color: white;
+  font-family: 'Gruppo', cursive;
+  position: absolute;
+  left: 2%;
+  top: 32%;
+  text-align: center; }
+
+.presentation__col--right {
+  background-color: #212435; }
+
+.products {
+  height: 100vh; }
+
+.products__col--left {
+  background-image: url(../img/onion_rings.jpg);
+  background-size: cover; }
+
+.products__col--right {
+  background-color: #f9fafa; }
+
+.products__top--left--main {
+  color: #212435;
+  font-family: 'Gruppo', cursive;
+  white-space: nowrap;
+  position: absolute;
+  left: 150px;
+  top: 100px; }
+
+.products__top--left--sub {
+  color: #212435;
+  position: absolute;
+  font-family: 'Gruppo', cursive;
+  font-size: 20px;
+  left: 10%;
+  top: 160px; }
+
+.products__top--right--main {
+  color: #212435;
+  font-family: 'Gruppo', cursive;
+  white-space: nowrap;
+  position: absolute;
+  left: 130px;
+  top: 100px; }
+
+.products__top--right--sub {
+  color: #212435;
+  font-family: 'Gruppo', cursive;
+  font-size: 20px;
+  position: absolute;
+  left: 10%;
+  top: 160px;
+  right: 10%; }
+
+.products__bottom--left
+.products__bottom--left--main {
+  color: #212435;
+  font-family: 'Gruppo', cursive;
+  white-space: nowrap;
+  position: absolute;
+  left: 120px;
+  top: 360px; }
+
+.products__bottom--left--sub {
+  color: #212435;
+  font-family: 'Gruppo', cursive;
+  font-size: 20px;
+  position: absolute;
+  left: 10%;
+  top: 440px; }
+
+.products__bottom--right--main {
+  color: #212435;
+  font-family: 'Gruppo', cursive;
+  white-space: nowrap;
+  position: absolute;
+  left: 100px;
+  top: 360px; }
+
+.products__bottom--right--sub {
+  color: #212435;
+  font-family: 'Gruppo', cursive;
+  font-size: 20px;
+  position: absolute;
+  left: 10%;
+  top: 440px;
+  right: 10%; }
+
+.quote {
+  height: 100vh; }
+
+.quote__col--left {
+  background-color: #f9fafa; }
+
+.quote__text--main {
+  color: #212435;
+  font-family: 'Gruppo', cursive;
+  position: absolute;
+  left: 10%;
+  top: 35%;
+  right: 10%; }
+
+.quote__col-right {
+  background-image: url(../img/big_burguer.jpg);
+  background-size: cover; }
+
+.food__menu {
+  height: 100vh; }
+
+.food__menu__col--left {
+  background-image: url(../img/burguer_gourmet.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.food__menu__col--right {
+  background-image: url(../img/food_menu.jpg);
+  background-size: 850px 720px;
+  left: 0.2%; }
+
+.food__menu__text--main {
+  color: #212435;
+  font-family: 'Gruppo', cursive;
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  right: 10%; }
+
+.comments {
+  height: 100vh; }
+
+.comments__col--left {
+  background-color: #f9fafa; }
+
+.comments__top--left--main {
+  color: #212435;
+  font-family: 'Gruppo', cursive;
+  white-space: nowrap;
+  position: absolute;
+  left: 10%;
+  top: 80px; }
+
+.comments__top--left--sub {
+  color: #212435;
+  position: absolute;
+  font-family: 'Gruppo', cursive;
+  font-size: 20px;
+  left: 10%;
+  top: 140px; }
+
+.comments__top--right--main {
+  color: #212435;
+  font-family: 'Gruppo', cursive;
+  white-space: nowrap;
+  position: absolute;
+  left: 10%;
+  top: 80px; }
+
+.comments__top--right--sub {
+  color: #212435;
+  font-family: 'Gruppo', cursive;
+  font-size: 20px;
+  position: absolute;
+  left: 10%;
+  top: 140px;
+  right: 10%; }
+
+.comments__bottom--left
+.comments__bottom--left--main {
+  color: #212435;
+  font-family: 'Gruppo', cursive;
+  white-space: nowrap;
+  position: absolute;
+  left: 10%;
+  top: 400px; }
+
+.comments__bottom--left--sub {
+  color: #212435;
+  font-family: 'Gruppo', cursive;
+  font-size: 20px;
+  position: absolute;
+  left: 10%;
+  top: 460px; }
+
+.comments__bottom--right--main {
+  color: #212435;
+  font-family: 'Gruppo', cursive;
+  white-space: nowrap;
+  position: absolute;
+  left: 10%;
+  top: 400px; }
+
+.comments__bottom--right--sub {
+  color: #212435;
+  font-family: 'Gruppo', cursive;
+  font-size: 20px;
+  position: absolute;
+  left: 10%;
+  top: 460px;
+  right: 10%; }
+
+.comments__col--right {
+  background-image: url(../img/two_burguers.jpg);
+  background-size: cover; }
+
+.photos__top {
+  height: 50vh; }
+
+.photos__top--left {
+  background-image: url(../img/montesham2.jpg);
+  background-size: cover; }
+
+.photos__top--centerleft {
+  background-image: url(../img/montesham.jpg);
+  background-size: cover; }
+
+.photos__top--centerright {
+  background-image: url(../img/guinness.jpg);
+  background-size: cover; }
+
+.photos__top--right {
+  background-image: url(../img/burguer.jpg);
+  background-size: cover; }
+
+.photos__bottom {
+  height: 50vh; }
+
+.photos__bottom--left {
+  background-image: url(../img/espelanada.jpg);
+  background-size: cover; }
+
+.photos__bottom--centerleft {
+  background-image: url(../img/salad.jpg);
+  background-size: cover; }
+
+.photos__bottom--centerright {
+  background-image: url(../img/ice_cream.jpg);
+  background-size: cover; }
+
+.photos__bottom--right {
+  background-image: url(../img/fruits.jpg);
+  background-size: cover; }
+
+.contact {
+  height: 100vh; }
+
+.contact__col--left {
+  background-color: #212435; }
+
+.contact__col--center {
+  background-color: #212435; }
+
+.form {
+  font-size: 16px;
+  background: #212435;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 10px 10px 10px; }
+
+.contact__text {
+  color: white;
+  font-family: 'Gruppo', cursive;
+  padding: 100px 0 80px 0; }
+
+.contact__input, .contact__textarea {
+  width: 474px;
+  padding: 10px; }
+
+.enviar input {
+  background-color: #fff;
+  font-family: 'Gruppo', cursive;
+  height: 40px;
+  width: 150px;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid;
+  color: #000;
+  cursor: pointer; }
+
+.enviar input:hover {
+  background: #363952;
+  font-family: 'Gruppo', cursive;
+  color: #fff; }
+
+.contact__textarea {
+  width: 474px;
+  height: 120px;
+  line-height: 20px; }
+
+.contact__col--right {
+  background-color: #212435; }
+
+.arrow__dark__right {
+  position: absolute;
+  bottom: 40px;
+  right: 40px; }
+
+.arrow__dark__right--menu {
+  position: absolute;
+  bottom: 25px;
+  right: 10px; }
+
+.dark__right {
+  height: 30px; }
+
+.arrow__white__right {
+  position: absolute;
+  bottom: 40px;
+  right: 40px; }
+
+.white__right {
+  height: 30px; }
+
+.arrow__dark__left {
+  position: absolute;
+  bottom: 40px;
+  left: 4px; }
+
+.dark__left {
+  height: 30px; }
+
+.arrow__white__left {
+  position: absolute;
+  bottom: 40px;
+  left: 40px; }
+
+.white__left {
+  height: 30px; }
+
+.nav {
+  transform: translateY(-10%);
+  opacity: 0;
+  top: 55px;
+  left: -30px;
+  transition: all 0.5s ease-in-out;
+  background: #f9fafa;
+  width: 165px;
+  border-radius: 5px;
+  transform: translateY(0%);
+  box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, 0.1); }
+
+.nav a {
+  text-align: center;
+  white-space: nowrap;
+  display: inline;
+  margin: 20px 10px;
+  color: #212435;
+  text-decoration: none;
+  font-family: 'Gruppo', cursive;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.nav a:hover {
+  background: #f9fafa;
+  font-family: 'Gruppo', cursive;
+  color: #212435; }
+
+#toggle:checked ~ .nav {
+  opacity: 1;
+  transform: translateY(10%); }
